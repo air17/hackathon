@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+.container .form-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .form-wrapper .form-input {
+  flex-basis: 45%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+.container .form-wrapper .form-input .input-header {
+  background-color: #4285f5;
+  border-radius: 15px 15px 0px 0px;
+}
+.container .form-wrapper .form-input .input-header h3 {
+  color: #fff;
+  padding: 10px 15px;
+}
+.container .form-wrapper .form-input .input-body textarea {
+  max-width: 100%;
+  border: none;
+  font-size: 16px;
+  border-bottom: 1px solid gray;
+  outline: none;
+  padding: 5px 10px;
+}
+.container .form-wrapper .form-input .input-footer {
+  text-align: right;
+}
+.container .form-wrapper .form-input .input-footer button {
+  margin: 5px 10px;
+  background-color: #4285f5;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.container .form-wrapper .form-output {
+  flex-basis: 45%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+.container .form-wrapper .form-output .output-header {
+  background-color: #4285f5;
+  border-radius: 15px 15px 0px 0px;
+}
+.container .form-wrapper .form-output .output-header h3 {
+  color: #fff;
+  padding: 10px 15px;
+}
+.container .form-wrapper .form-output .output-body textarea {
+  border: none;
+  font-size: 16px;
+  height: 100%;
+  outline: none;
+  padding: 5px 10px;
+  border-bottom: 1px solid gray;
+}
+.container .form-wrapper .form-output .input-footer {
+  text-align: right;
+}
+.container .form-wrapper .form-output .input-footer button {
+  margin: 5px 10px;
+  background-color: #4285f5;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

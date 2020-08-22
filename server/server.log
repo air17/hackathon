@@ -1,0 +1,50 @@
+2020-08-22 11:20:55 ERROR Error handling request
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/aiohttp/web_protocol.py", line 418, in start
+    resp = await task
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/aiohttp/web_app.py", line 458, in _handle
+    resp = await handler(request)
+  File "server.py", line 24, in resolve_words_request
+    edited_sentence = handletext(req.get("input"))
+  File "/home/ubuntu/LangProject/lang_model.py", line 14, in handletext
+    words = text.split()
+AttributeError: 'NoneType' object has no attribute 'split'
+2020-08-22 11:21:04 ERROR Error handling request
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/aiohttp/web_protocol.py", line 418, in start
+    resp = await task
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/aiohttp/web_app.py", line 458, in _handle
+    resp = await handler(request)
+  File "server.py", line 23, in resolve_words_request
+    req = await request.json()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/aiohttp/web_request.py", line 584, in json
+    return loads(body)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2020-08-22 11:27:02 ERROR Error handling request
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/aiohttp/web_protocol.py", line 418, in start
+    resp = await task
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/aiohttp/web_app.py", line 458, in _handle
+    resp = await handler(request)
+  File "server.py", line 24, in resolve_words_request
+    edited_sentence = handletext(req.get("input"))
+  File "/home/ubuntu/LangProject/lang_model.py", line 14, in handletext
+    words = text.split()
+AttributeError: 'NoneType' object has no attribute 'split'
+2020-08-22 11:33:03 ERROR Error handling request
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/aiohttp/web_protocol.py", line 418, in start
+    resp = await task
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/aiohttp/web_app.py", line 458, in _handle
+    resp = await handler(request)
+  File "server.py", line 24, in resolve_words_request
+    edited_sentence = handletext(req.get("input"))
+  File "/home/ubuntu/LangProject/lang_model.py", line 14, in handletext
+    words = text.split()
+AttributeError: 'NoneType' object has no attribute 'split'

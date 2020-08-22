@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+body{
+  background-color: rgb(243,243,243);
+
+}
+.container{
+  max-width:800px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  .form-wrapper{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    .form-input{
+      flex-basis: 45%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      border:1px solid #fff;
+      .input-header{
+        background-color: rgb(66,133,245);
+        border-radius: 15px 15px 0px 0px;
+        h3{
+          color:#fff;
+          padding: 10px 15px;
+        }
+      }
+      .input-body{
+        textarea{
+          max-width: 100%;
+          border:none;
+          font-size:16px;
+          border-bottom: 1px solid gray;
+          outline: none;
+          padding: 5px 10px;
+
+        }
+      }
+      .input-footer{
+        text-align: right;
+        button{
+          margin:5px 10px;
+          background-color: rgb(66,133,245);
+          border:none;
+          padding: 10px 15px;
+          color:#fff;
+          font-weight: bold;
+          border-radius: 10px;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    }
+    .form-output{
+      flex-basis: 45%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      border:1px solid #fff;
+      .output-header{
+        background-color: rgb(66,133,245);
+        border-radius: 15px 15px 0px 0px;
+        h3{
+          color:#fff;
+          padding: 10px 15px;
+        }
+      }
+      .output-body{
+        textarea{
+          border:none;
+          font-size:16px;
+          height: 100%;
+          outline: none;
+          padding: 5px 10px;
+          border-bottom: 1px solid gray;
+        }
+      }
+      .input-footer{
+        text-align: right;
+        button{
+          margin:5px 10px;
+          background-color: rgb(66,133,245);
+          border:none;
+          padding: 10px 15px;
+          color:#fff;
+          font-weight: bold;
+          border-radius: 10px;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
